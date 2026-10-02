@@ -1,7 +1,7 @@
 {
   "name": "@manufact-dev/aperture-linux-x64-gnu",
   "dist-tags": {
-    "next": "0.1.1-rc.2"
+    "next": "0.1.1-rc.3"
   },
   "versions": {
     "0.1.1-rc.1": {
@@ -65,7 +65,38 @@
         "shasum": "45c0e491d76153fd3d4d6293b4fd2b3d6fc5059a",
         "integrity": "sha512-nuRHh/p9e5w1X4NBaV5cmQWTDnHrsOr7MGt74yM3jjXX06qyO6u98Mf6QP2H5MW19Ynz2RCl9WWuufHag+T1Mg=="
       }
+    },
+    "0.1.1-rc.3": {
+      "name": "@manufact-dev/aperture-linux-x64-gnu",
+      "version": "0.1.1-rc.3",
+      "description": "Aperture native binary for Linux x64 glibc",
+      "exports": {
+        "./bin/aperture": "./bin/aperture",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "bin/aperture",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "preferUnplugged": true,
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/manufact-dev/aperture/releases/download/aperture-v0.1.1-rc.3/manufact-dev-aperture-linux-x64-gnu-0.1.1-rc.3.tgz",
+        "shasum": "6e505546a18a53124dadd83509139faca5db14b3",
+        "integrity": "sha512-zBsi7XadXTry2ahsATifvPl6i1Vb91wGzv4zNQ9yqu0CVrTdpGBeIhawkW7qe6Cuqi5uA7L208G6Cap+W0ZbrQ=="
+      }
     }
   },
-  "modified": "2026-10-02T00:34:55.760Z"
+  "modified": "2026-10-02T05:30:55.881Z"
 }

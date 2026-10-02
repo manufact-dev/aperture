@@ -1,7 +1,7 @@
 {
   "name": "@manufact-dev/aperture-render-linux-x64-gnu",
   "dist-tags": {
-    "next": "0.1.1-rc.2"
+    "next": "0.1.1-rc.3"
   },
   "versions": {
     "0.1.1-rc.1": {
@@ -67,7 +67,39 @@
         "shasum": "c3f9dd335edda9ab1bcb971847d5396c74b92d03",
         "integrity": "sha512-2YO/u93QXqDd4XwwcmRooW7N/MI4TzZW0NX3/HnlfWBbY1EcCXiqIrFg1vgrbhXQ4kObbjf3Y2aAM1p0TqO5fQ=="
       }
+    },
+    "0.1.1-rc.3": {
+      "name": "@manufact-dev/aperture-render-linux-x64-gnu",
+      "version": "0.1.1-rc.3",
+      "description": "Aperture software Vulkan render stack for Linux x64 glibc",
+      "exports": {
+        "./icd/lvp_icd.x86_64.json": "./share/vulkan/icd.d/lvp_icd.x86_64.json",
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "lib/",
+        "share/vulkan/icd.d/lvp_icd.x86_64.json",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "os": [
+        "linux"
+      ],
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "preferUnplugged": true,
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/manufact-dev/aperture/releases/download/aperture-v0.1.1-rc.3/manufact-dev-aperture-render-linux-x64-gnu-0.1.1-rc.3.tgz",
+        "shasum": "c50e7d5b8636571bfcaebbd65d4cf857cfbaacce",
+        "integrity": "sha512-7qtJDhh498j/ZGbvt3qQeuc+QgekyfRjy3KTqUS00MD/NerfCbe6HyKEe0kd8pJkxtak1fFr8ysnWhJuhLK+GQ=="
+      }
     }
   },
-  "modified": "2026-10-02T00:34:57.690Z"
+  "modified": "2026-10-02T05:30:57.984Z"
 }
