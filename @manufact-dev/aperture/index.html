@@ -1,7 +1,7 @@
 {
   "name": "@manufact-dev/aperture",
   "dist-tags": {
-    "next": "0.1.1-rc.1"
+    "next": "0.1.1-rc.2"
   },
   "versions": {
     "0.1.1-rc.1": {
@@ -38,7 +38,43 @@
         "shasum": "1932c0e3bc7dc8b2415b0e037e667e6a08b3f678",
         "integrity": "sha512-D/tumuYXQhSifGYWndlHanr/Z5TsUaUzilBc6X2Ur6JJw29xpQHYX1X4wBj0qXtVsNh4wwn2UQheJIM4nOoELg=="
       }
+    },
+    "0.1.1-rc.2": {
+      "name": "@manufact-dev/aperture",
+      "version": "0.1.1-rc.2",
+      "description": "Headless CAD screenshot renderer for agents",
+      "type": "module",
+      "bin": {
+        "aperture": "./bin/aperture.mjs"
+      },
+      "exports": {
+        ".": {
+          "types": "./lib/index.d.ts",
+          "import": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+      },
+      "files": [
+        "bin/",
+        "lib/",
+        "README.md",
+        "PROTOCOL.md",
+        "LICENSE"
+      ],
+      "optionalDependencies": {
+        "@manufact-dev/aperture-linux-x64-gnu": "0.1.1-rc.2",
+        "@manufact-dev/aperture-render-linux-x64-gnu": "0.1.1-rc.2"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "license": "SEE LICENSE IN LICENSE",
+      "dist": {
+        "tarball": "https://github.com/manufact-dev/aperture/releases/download/aperture-v0.1.1-rc.2/manufact-dev-aperture-0.1.1-rc.2.tgz",
+        "shasum": "f598b9d2bb95f8a66a3d33fa6af84983a0cddc2c",
+        "integrity": "sha512-xi7ZezMuluS1e+H2w5MJA4uy12yGYRsMvnYGPdJAXSOdaqUMRA0Npcx8AJvogAhX3D/irzficcYssP35wRAsKw=="
+      }
     }
   },
-  "modified": "2026-10-01T06:27:28.930Z"
+  "modified": "2026-10-02T00:34:54.276Z"
 }
